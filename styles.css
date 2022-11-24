@@ -2,21 +2,23 @@
 
 body {
     background-color: rgba(144, 83, 168, 0.7);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin:0;
+    position: relative;
   }
   
   .phone {
-    position: relative;
+    position:absolute ;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
     overflow: hidden;
     border: 3px solid #eee;
     border-radius: 15px;
-    height: 700px;
-    width: 370px;
+    height: 600px;
+    width: 60%;max-width: 300px;
   }
   
   .phone .content {
